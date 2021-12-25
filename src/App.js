@@ -1,27 +1,13 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-
-import Pet from './Pet'
+import { render } from "react-dom";
+import SearchParams from "./SearchParams";
 
 const App = () => {
-  return React.createElement("div", {}, [
-    React.createElement("h1", {}, "Adopt Me!"),
-    React.createElement(Pet, {
-      name: "Moti",
-      animal: "Dog",
-      breed: "Indian Dog",
-    }),
-    React.createElement(Pet, {
-      name: "Sheru",
-      animal: "Dog",
-      breed: "Indian Dog",
-    }),
-    React.createElement(Pet, {
-      name: "Goldi",
-      animal: "Dog",
-      breed: "Indian Dog",
-    }),
-  ]);
+  return (
+    <div>
+      <h1>Adopt Me!</h1>
+      <SearchParams />
+    </div>
+  );
 };
 
-ReactDOM.render(React.createElement(App), document.getElementById("root"));
+render(<App />, document.getElementById("root"));
