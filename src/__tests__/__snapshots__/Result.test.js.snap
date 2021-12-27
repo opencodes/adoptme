@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Results should render with no pets 1`] = `
+<div
+  className="search"
+>
+  <h1>
+    No Pets Found
+  </h1>
+</div>
+`;
+
+exports[`Results should render with no pets 2`] = `
+<div
+  className="search"
+>
+  <a
+    className="pet"
+    href="/details/1"
+    onClick={[Function]}
+  >
+    <div
+      className="image-container"
+    >
+      <img
+        alt="Luna"
+        data-testid="thumbnail"
+        src="http://pets-images.dev-apis.com/pets/dog25.jpg"
+      />
+    </div>
+    <div
+      className="info"
+    >
+      <h1>
+        Luna
+      </h1>
+      <h2>
+        dog — Havanese — Seattle, WA
+      </h2>
+    </div>
+  </a>
+</div>
+`;

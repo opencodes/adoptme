@@ -14,7 +14,6 @@ export default function useBreedList (animal) {
         } else {
             requestBreedList();
         }
-
         async function requestBreedList () {
             setBreedList([]);
             setStatus("loading");
